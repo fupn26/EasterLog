@@ -13,10 +13,9 @@ public class Main {
         System.out.println(n);
         for (int i = 1; i <= n; i++) {
             logger.log(VIOLATION, "Zöld erdőben jártam,");
-            logger.info("Kék ibolyát láttam,");
+            logger.fatal("Kék ibolyát láttam,");
             logger.warn("El akart hervadni,");
             logger.log(REQUEST, "Szabad-e locsolni?");
-            logger.fatal("Locsolók érkeznek a házhoz!");
             try {
                 Thread.sleep(10); // egy kis késleltetés
             } catch (InterruptedException e) {}
